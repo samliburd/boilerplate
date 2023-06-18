@@ -23,12 +23,20 @@ const setResultText = ({ email, capitalized, tempPassword }) => {
 Apologies for the issues you have been having logging in. I have now updated your account and created a new temporary password.<br>
 Please login on a fresh web browser using the access credentials shown below and amend your password to something more secure.<br>
 <br>
-<strong>Username:</strong> ${email}<br>
-<strong>Temporary password:</strong> ${tempPassword}<br>
+<strong>Username:</strong> <span id="emailSpan" ondblclick="highlightText(this)">${email}</span><br>
+<strong>Temporary password:</strong> <span id="tempPasswordSpan" ondblclick="highlightText(this)">${tempPassword}</span><br>
 <br>
 Kind Regards,<br>
 Web team`;
     document.querySelector(".wrapper").style.display = "flex";
+};
+
+const highlightText = (element) => {
+    const range = document.createRange();
+    range.selectNodeContents(element);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
 };
 
 const copyToClipboard = (text) => {
