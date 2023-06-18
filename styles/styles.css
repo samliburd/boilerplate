@@ -47,8 +47,8 @@ body {
 }
 #result {
   margin-top: 30px;
-  padding: 10px;
-  border: solid #43cfb5 7.5px;
+  padding: 15px;
+  border: solid #43cfb5 5px;
   border-radius: 20px;
 }
 .inputBox {
