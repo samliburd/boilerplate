@@ -18,8 +18,7 @@ const generatePassword = () => {
 
 const setResultText = ({ email, capitalized, tempPassword }) => {
     const resultElement = document.getElementById("result");
-    resultElement.innerHTML = `
-Hello ${capitalized},<br>
+    resultElement.innerHTML = `Hello ${capitalized},<br>
 <br>
 Apologies for the issues you have been having logging in. I have now updated your account and created a new temporary password.<br>
 Please login on a fresh web browser using the access credentials shown below and amend your password to something more secure.<br>
@@ -28,8 +27,7 @@ Please login on a fresh web browser using the access credentials shown below and
 <strong>Temporary password:</strong> ${tempPassword}<br>
 <br>
 Kind Regards,<br>
-Web team
-    `;
+Web team`;
     document.querySelector(".wrapper").style.display = "flex";
 };
 
@@ -43,7 +41,7 @@ const copyToClipboard = (text) => {
 };
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
     const { email, capitalized } = getFormValues();
     const tempPassword = generatePassword();
