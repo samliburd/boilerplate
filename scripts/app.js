@@ -18,11 +18,13 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const tempPassword = generatePassword();
     // Set the text content of the div element
     document.getElementById("result").innerHTML = `
-Hello ${capitalised},<br><br>
+Hello ${capitalised},<br>
+<br>
 Apologies for the issues you have been having logging in. I have now updated your account and created a new temporary password. <br><br>Please login on a fresh web browser using the access credentials shown below and amend your password to something more secure.<br>
 <br>
 <strong>Username:</strong> ${email}<br>
-<strong>Temporary password:</strong> ${tempPassword}<br><br>
+<strong>Temporary password:</strong> ${tempPassword}<br>
+<br>
 Kind Regards,<br>
 Web team
 `;
