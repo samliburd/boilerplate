@@ -1,0 +1,51 @@
+body {
+  width: 20vw;
+  margin: 0 auto;
+  color: #003643;
+}
+.wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+#copyButton {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+#submitButton {
+  display: flex;
+  justify-content: center;
+  background-color: #43cfb5;
+  border-width: 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #003643;
+}
+#result {
+  padding-top: 10vh;
+}
+.inputBox {
+    background-color: #43cfb5;
+    padding: 10px;
+    width: 50px;
+}
+.inputWrapper {
+    display: flex;
+    padding: 5%;
+}
+#myForm {
+    height: 25vh;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
