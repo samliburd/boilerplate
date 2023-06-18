@@ -1,5 +1,5 @@
 body {
-  width: 20vw;
+  width: 25vw;
   margin: 0 auto;
   color: #003643;
 }
@@ -7,6 +7,14 @@ body {
   display: none;
   flex-direction: column;
   justify-content: center;
+}
+#myForm {
+    height: 25vh;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 #copyButton {
   background-color: transparent;
@@ -16,7 +24,8 @@ body {
   font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
-  padding: 0;
+  padding: 10px 0px;
+  color: #6f35a3;
 }
 #submitButton {
   display: flex;
@@ -40,12 +49,4 @@ body {
 .inputWrapper {
     display: flex;
     padding: 5%;
-}
-#myForm {
-    height: 25vh;
-    display: flex;
-    padding-top: 10%;
-    flex-direction: column;
-    justify-content: space-around;
-
 }
